@@ -1,39 +1,474 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Mix Autopeças: encontre peças e acessórios para seu veículo. Peça seu orçamento diretamente pelo WhatsApp." />
-  <meta name="theme-color" content="#092a59" />
-  <title>Mix Autopeças | Peças e acessórios</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mix Autopeças | Riacho Grande</title>
+  <meta name="description" content="Mix Autopeças no Riacho Grande. Solicite orçamentos de peças automotivas diretamente pelo WhatsApp.">
+
   <style>
-    :root{--navy:#092a59;--blue:#1356a2;--yellow:#ffce27;--ink:#14233c;--muted:#62718a;--bg:#f3f7fc;--white:#fff}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}a{text-decoration:none;color:inherit}button,input,textarea{font:inherit}.container{width:min(1120px,92%);margin:auto}
-    header{background:var(--navy);color:white;position:sticky;top:0;z-index:10;box-shadow:0 5px 20px #071d3b2b}.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:78px}.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.5px;font-size:1.35rem}.brand-icon{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;background:var(--yellow);color:var(--navy);font-size:24px}.brand small{display:block;font-size:.65rem;letter-spacing:2px;color:var(--yellow)}nav{display:flex;align-items:center;gap:25px;font-size:.93rem;font-weight:bold}nav a:hover{color:var(--yellow)}.btn{display:inline-flex;justify-content:center;align-items:center;gap:9px;border:0;border-radius:10px;background:var(--yellow);color:var(--navy);padding:14px 23px;font-weight:800;cursor:pointer;transition:transform .2s,filter .2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.04)}.btn-outline{background:transparent;border:2px solid #ffffff80;color:white}.btn-blue{background:var(--navy);color:white}.hero{background:linear-gradient(115deg,#08254f 0%,#104e9a 70%,#1768b6 100%);color:white;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;min-height:500px;gap:35px;padding:70px 0}.eyebrow{display:inline-block;background:#ffce2724;border:1px solid #ffce2777;color:var(--yellow);padding:7px 12px;border-radius:50px;font-size:.82rem;font-weight:bold;letter-spacing:.8px}.hero h1{font-size:clamp(2.4rem,5vw,4.4rem);line-height:1.09;margin:20px 0}.hero h1 span{color:var(--yellow)}.hero p{max-width:540px;color:#d9e6f8;font-size:1.1rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.hero-visual{height:350px;border-radius:28px;background:radial-gradient(circle at 65% 40%,#ffce2760,transparent 33%),linear-gradient(140deg,#2c70b3,#082449);border:1px solid #ffffff30;display:flex;align-items:center;justify-content:center;position:relative;box-shadow:0 30px 65px #00132e60}.hero-visual .gear{font-size:155px;filter:drop-shadow(0 12px 12px #061b3e);line-height:1}.hero-visual .tag{position:absolute;bottom:22px;left:22px;right:22px;background:#ffffffee;color:var(--navy);border-radius:13px;padding:13px 16px;font-weight:800;text-align:center}.section{padding:76px 0}.section-title{text-align:center;max-width:660px;margin:0 auto 38px}.section-title h2{font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.15;margin:0 0 12px}.section-title p{color:var(--muted);margin:0}.stripe{width:65px;height:5px;background:var(--yellow);border-radius:20px;margin:0 auto 18px}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.card{background:white;border-radius:18px;padding:27px 20px;border:1px solid #e1e8f2;box-shadow:0 10px 25px #0d2d5710}.card .emoji{display:grid;place-items:center;background:#e9f2ff;border-radius:15px;width:58px;height:58px;font-size:29px;margin-bottom:20px}.card h3{margin:0 0 8px;font-size:1.12rem}.card p{color:var(--muted);font-size:.92rem;margin:0}.banner{background:var(--yellow);padding:25px;border-radius:20px;display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:30px}.banner strong{font-size:1.2rem}.banner p{margin:5px 0 0;color:#514513}.quote{background:white}.quote-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:50px;align-items:center}.quote-copy h2{font-size:2.4rem;line-height:1.14}.quote-copy p{color:var(--muted)}.step{display:flex;gap:12px;align-items:center;margin:20px 0;font-weight:700}.step span{display:grid;place-items:center;flex:none;width:32px;height:32px;background:var(--yellow);border-radius:50%;color:var(--navy)}form{background:var(--bg);border:1px solid #e0e8f4;border-radius:20px;padding:28px;box-shadow:0 14px 35px #092a5912}.field{margin-bottom:16px}label{display:block;font-weight:bold;font-size:.9rem;margin-bottom:7px}input,textarea{width:100%;padding:13px 14px;border:1px solid #ccd8e8;border-radius:10px;background:white;color:var(--ink);outline:none}input:focus,textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px #1356a21c}textarea{resize:vertical;min-height:92px}form .btn{width:100%}.form-note{font-size:.79rem;color:var(--muted);text-align:center;margin:12px 0 0}.contact{background:var(--navy);color:white}.contact .section-title p{color:#d6e5f7}.contact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.contact-card{border:1px solid #ffffff32;background:#ffffff10;border-radius:16px;padding:25px}.contact-card h3{color:var(--yellow);margin:0 0 8px}.contact-card p{color:#e3ecf8;margin:0 0 18px}footer{background:#061d3e;color:#b8cce4;text-align:center;padding:25px;font-size:.85rem}.floating-wa{position:fixed;bottom:23px;right:23px;background:#25d366;color:white;border-radius:50%;width:62px;height:62px;display:grid;place-items:center;font-size:28px;box-shadow:0 8px 25px #0004;z-index:20}.floating-wa:hover{transform:scale(1.05)}@media(max-width:850px){.hero-grid,.quote-grid{grid-template-columns:1fr}.hero-visual{height:260px}.cards{grid-template-columns:repeat(2,1fr)}nav{gap:12px}nav .nav-link{display:none}}@media(max-width:550px){.hero-grid{padding:55px 0}.hero-visual{height:220px}.hero-visual .gear{font-size:110px}.cards,.contact-grid{grid-template-columns:1fr}.banner{align-items:flex-start;flex-direction:column}.section{padding:56px 0}.quote-copy h2{font-size:2rem}.brand{font-size:1.05rem}.nav .btn{font-size:.8rem;padding:11px}}
+    :root {
+      --azul: #082c60;
+      --azul-claro: #1256a0;
+      --amarelo: #ffcf24;
+      --fundo: #f3f6fb;
+      --texto: #182335;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--fundo);
+      color: var(--texto);
+    }
+
+    header {
+      background: var(--azul);
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: 900;
+      letter-spacing: -1px;
+    }
+
+    .logo span { color: var(--amarelo); }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover { color: var(--amarelo); }
+
+    .hero {
+      min-height: 480px;
+      background:
+        linear-gradient(90deg, rgba(4,25,56,.95), rgba(4,25,56,.45)),
+        url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=1600') center/cover;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 70px 8%;
+    }
+
+    .hero-content { max-width: 650px; }
+
+    .hero h1 {
+      font-size: clamp(38px, 6vw, 65px);
+      line-height: 1.08;
+      margin: 15px 0;
+    }
+
+    .hero h1 span { color: var(--amarelo); }
+
+    .hero p {
+      font-size: 19px;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    .tag {
+      color: var(--amarelo);
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--amarelo);
+      color: var(--azul);
+      padding: 15px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 800;
+      border: none;
+      cursor: pointer;
+      transition: .2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      background: #ffe16b;
+    }
+
+    section { padding: 75px 8%; }
+
+    .section-title {
+      text-align: center;
+      font-size: 34px;
+      color: var(--azul);
+      margin: 0 0 15px;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: #64748b;
+      margin-bottom: 40px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 6px 24px rgba(0,0,0,.07);
+      transition: .2s;
+    }
+
+    .card:hover { transform: translateY(-5px); }
+
+    .card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-content { padding: 22px; }
+
+    .card h3 {
+      margin: 0 0 10px;
+      color: var(--azul);
+    }
+
+    .card p {
+      color: #64748b;
+      line-height: 1.6;
+    }
+
+    .about {
+      background: var(--azul);
+      color: white;
+      text-align: center;
+    }
+
+    .about h2 { color: var(--amarelo); }
+
+    .about p {
+      max-width: 750px;
+      margin: 20px auto;
+      line-height: 1.8;
+      font-size: 18px;
+    }
+
+    .form-container {
+      max-width: 650px;
+      margin: auto;
+      background: white;
+      padding: 35px;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0,0,0,.08);
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin: 16px 0 8px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font: inherit;
+    }
+
+    input:focus, textarea:focus {
+      outline: 2px solid var(--amarelo);
+      border-color: var(--amarelo);
+    }
+
+    .form-container .btn {
+      width: 100%;
+      margin-top: 24px;
+      font-size: 16px;
+    }
+
+    .contact {
+      text-align: center;
+      background: #e8eff9;
+    }
+
+    footer {
+      background: #041a38;
+      color: white;
+      text-align: center;
+      padding: 28px;
+    }
+
+    .floating-whatsapp {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      background: #25d366;
+      color: white;
+      padding: 15px 19px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 5px 20px rgba(0,0,0,.25);
+      z-index: 10;
+    }
+
+    @media (max-width: 600px) {
+      header { justify-content: center; }
+      nav { justify-content: center; }
+      .hero { padding: 60px 7%; }
+      section { padding: 55px 6%; }
+      .form-container { padding: 22px; }
+    }
   </style>
 </head>
+
 <body>
-  <header><div class="container nav"><a class="brand" href="#inicio" aria-label="Mix Autopeças - início"><span class="brand-icon">⚙</span><span>MIX <span style="color:var(--yellow)">AUTOPEÇAS</span><small>PEÇAS E ACESSÓRIOS</small></span></a><nav><a class="nav-link" href="#categorias">Produtos</a><a class="nav-link" href="#orcamento">Orçamento</a><a class="nav-link" href="#contato">Contato</a><a class="btn" href="https://wa.me/5511947870632?text=Ol%C3%A1%2C%20Mix%20Autope%C3%A7as!%20Gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer">WhatsApp ↗</a></nav></div></header>
+
+  <header>
+    <div class="logo">MIX <span>AUTOPEÇAS</span></div>
+
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#orcamento">Orçamento</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
   <main>
-    <section class="hero" id="inicio"><div class="container hero-grid"><div><span class="eyebrow">🚘 SUA LOJA DE AUTOPEÇAS</span><h1>Seu carro merece <span>as peças certas.</span></h1><p>Precisa de uma peça para seu veículo? Fale com a equipe da Mix Autopeças, informe o modelo e solicite um orçamento de forma rápida pelo WhatsApp.</p><div class="actions"><a class="btn" href="#orcamento">Solicitar orçamento →</a><a class="btn btn-outline" href="#categorias">Conhecer categorias</a></div></div><div class="hero-visual" aria-label="Ilustração de engrenagem automotiva"><div class="gear">⚙️</div><div class="tag">MIX AUTOPEÇAS • SUA PARCEIRA NA ESTRADA</div></div></div></section>
-    <section class="section" id="categorias"><div class="container"><div class="section-title"><div class="stripe"></div><h2>O que você procura para seu carro?</h2><p>Conheça algumas linhas de produtos. Consulte a disponibilidade de cada peça com nossa equipe.</p></div><div class="cards"><article class="card"><div class="emoji">🛑</div><h3>Freios</h3><p>Consulte pastilhas, discos e componentes do sistema de frenagem.</p></article><article class="card"><div class="emoji">🔩</div><h3>Suspensão</h3><p>Peças e componentes para o sistema de suspensão do veículo.</p></article><article class="card"><div class="emoji">⚙️</div><h3>Motor</h3><p>Consulte componentes e peças para manutenção do motor.</p></article><article class="card"><div class="emoji">🛢️</div><h3>Óleos e filtros</h3><p>Produtos para revisões e manutenção preventiva.</p></article></div><div class="banner"><div><strong>Não encontrou a peça que procura?</strong><p>Não precisa pesquisar em milhares de produtos: envie os dados do carro e peça seu orçamento.</p></div><a class="btn btn-blue" href="#orcamento">Pedir uma peça →</a></div></div></section>
-    <section class="section quote" id="orcamento"><div class="container quote-grid"><div class="quote-copy"><div class="stripe" style="margin-left:0"></div><h2>Peça seu orçamento em poucos passos.</h2><p>Informe os dados do seu veículo e qual peça você precisa. Ao enviar, o WhatsApp da Mix Autopeças será aberto com sua mensagem pronta.</p><div class="step"><span>1</span> Preencha os dados do veículo</div><div class="step"><span>2</span> Descreva a peça desejada</div><div class="step"><span>3</span> Envie pelo WhatsApp</div></div><form id="quoteForm"><div class="field"><label for="nome">Seu nome</label><input id="nome" name="nome" placeholder="Ex.: João" required maxlength="80" /></div><div class="field"><label for="carro">Marca e modelo do veículo</label><input id="carro" name="carro" placeholder="Ex.: Volkswagen Gol 1.6" required maxlength="120" /></div><div class="field"><label for="ano">Ano do veículo</label><input id="ano" name="ano" placeholder="Ex.: 2015" required maxlength="20" /></div><div class="field"><label for="peca">Qual peça você precisa?</label><textarea id="peca" name="peca" placeholder="Ex.: Pastilhas de freio dianteiras" required maxlength="700"></textarea></div><button class="btn" type="submit">Enviar orçamento pelo WhatsApp ↗</button><p class="form-note">Você será direcionado ao WhatsApp. Nenhum dado é armazenado neste site.</p></form></div></section>
-    <section class="section contact" id="contato"><div class="container"><div class="section-title"><div class="stripe"></div><h2>Entre em contato</h2><p>Fale com a equipe e consulte peças e disponibilidade.</p></div><div class="contact-grid"><div class="contact-card"><h3>📱 WhatsApp</h3><p>(11) 94787-0632</p><a class="btn" href="https://wa.me/5511947870632?text=Ol%C3%A1%2C%20Mix%20Autope%C3%A7as!%20Gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer">Iniciar conversa ↗</a></div><div class="contact-card"><h3>📍 Visite a loja</h3><p>Consulte o endereço e o horário de atendimento diretamente com a equipe.</p><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Mix+Autope%C3%A7as+Riacho+Grande+S%C3%A3o+Bernardo+do+Campo" target="_blank" rel="noopener noreferrer">Procurar no Google Maps ↗</a></div></div></div></section>
+    <div class="hero" id="inicio">
+      <div class="hero-content">
+        <div class="tag">Riacho Grande • São Bernardo do Campo</div>
+
+        <h1>A PEÇA CERTA PARA <span>SEU CARRO!</span></h1>
+
+        <p>
+          Encontre peças e acessórios automotivos.
+          Consulte nossa equipe e solicite seu orçamento
+          diretamente pelo WhatsApp.
+        </p>
+
+        <a class="btn" href="#orcamento">
+          SOLICITAR ORÇAMENTO
+        </a>
+      </div>
+    </div>
+
+    <section id="produtos">
+      <h2 class="section-title">NOSSAS LINHAS DE PRODUTOS</h2>
+      <p class="section-subtitle">
+        Consulte a disponibilidade das peças com nossa equipe.
+      </p>
+
+      <div class="cards">
+
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=700"
+            alt="Peças e manutenção automotiva"
+            loading="lazy"
+          >
+          <div class="card-content">
+            <h3>Peças para motor</h3>
+            <p>Consulte componentes e peças para o motor do seu veículo.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=700"
+            alt="Automóvel esportivo"
+            loading="lazy"
+          >
+          <div class="card-content">
+            <h3>Freios e suspensão</h3>
+            <p>Consulte peças para os sistemas de freio e suspensão.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=700"
+            alt="Automóvel"
+            loading="lazy"
+          >
+          <div class="card-content">
+            <h3>Filtros e lubrificantes</h3>
+            <p>Consulte óleos, filtros e produtos de manutenção.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1517524206127-48bbd363f3d7?w=700"
+            alt="Oficina automotiva"
+            loading="lazy"
+          >
+          <div class="card-content">
+            <h3>Acessórios automotivos</h3>
+            <p>Entre em contato para consultar acessórios disponíveis.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="about" id="sobre">
+      <h2>SUA AUTOPEÇAS NO RIACHO GRANDE</h2>
+
+      <p>
+        Na Mix Autopeças, você pode consultar peças
+        e acessórios para seu veículo de forma prática.
+        Envie os dados do carro e a peça desejada
+        para solicitar seu orçamento.
+      </p>
+
+      <a
+        class="btn"
+        href="https://wa.me/5511947870632?text=Ol%C3%A1%2C%20Mix%20Autope%C3%A7as!"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        FALAR COM A LOJA
+      </a>
+    </section>
+
+    <section id="orcamento">
+      <h2 class="section-title">SOLICITE SEU ORÇAMENTO</h2>
+      <p class="section-subtitle">
+        Preencha os dados e envie sua solicitação pelo WhatsApp.
+      </p>
+
+      <div class="form-container">
+        <form id="formOrcamento">
+
+          <label for="nome">Seu nome</label>
+          <input
+            type="text"
+            id="nome"
+            placeholder="Digite seu nome"
+            required
+          >
+
+          <label for="veiculo">Modelo do veículo</label>
+          <input
+            type="text"
+            id="veiculo"
+            placeholder="Ex.: Gol 1.6"
+            required
+          >
+
+          <label for="ano">Ano do veículo</label>
+          <input
+            type="text"
+            id="ano"
+            placeholder="Ex.: 2015"
+            required
+          >
+
+          <label for="peca">Peça desejada</label>
+          <textarea
+            id="peca"
+            rows="4"
+            placeholder="Ex.: Pastilha de freio dianteira"
+            required
+          ></textarea>
+
+          <button type="submit" class="btn">
+            ENVIAR ORÇAMENTO PELO WHATSAPP
+          </button>
+
+        </form>
+      </div>
+    </section>
+
+    <section class="contact" id="contato">
+      <h2 class="section-title">ENTRE EM CONTATO</h2>
+
+      <p>Riacho Grande — São Bernardo do Campo, SP</p>
+      <p><strong>WhatsApp: (11) 94787-0632</strong></p>
+
+      <a
+        class="btn"
+        href="https://wa.me/5511947870632"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        ABRIR WHATSAPP
+      </a>
+    </section>
   </main>
-  <footer>© <span id="year"></span> Mix Autopeças • Site demonstrativo — informações e categorias sujeitas à confirmação da loja.</footer>
-  <a class="floating-wa" href="https://wa.me/5511947870632?text=Ol%C3%A1%2C%20Mix%20Autope%C3%A7as!%20Gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" aria-label="Conversar no WhatsApp">✆</a>
+
+  <footer>
+    <strong>MIX AUTOPEÇAS</strong>
+    <p>Riacho Grande — São Bernardo do Campo</p>
+    <small>Site demonstrativo. Informações sujeitas à confirmação.</small>
+  </footer>
+
+  <a
+    class="floating-whatsapp"
+    href="https://wa.me/5511947870632"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Falar com a Mix Autopeças pelo WhatsApp"
+  >
+    WhatsApp
+  </a>
+
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    document.getElementById('quoteForm').addEventListener('submit', function(event){
+    const form = document.getElementById("formOrcamento");
+
+    form.addEventListener("submit", function(event) {
       event.preventDefault();
-      if(!this.reportValidity()) return;
-      const nome = document.getElementById('nome').value.trim();
-      const carro = document.getElementById('carro').value.trim();
-      const ano = document.getElementById('ano').value.trim();
-      const peca = document.getElementById('peca').value.trim();
-      const mensagem = `Olá, Mix Autopeças! Gostaria de solicitar um orçamento.\n\n*Nome:* ${nome}\n*Veículo:* ${carro}\n*Ano:* ${ano}\n*Peça desejada:* ${peca}`;
-      window.open('https://wa.me/5511947870632?text=' + encodeURIComponent(mensagem), '_blank', 'noopener,noreferrer');
+
+      if (!form.reportValidity()) return;
+
+      const nome = document.getElementById("nome").value.trim();
+      const veiculo = document.getElementById("veiculo").value.trim();
+      const ano = document.getElementById("ano").value.trim();
+      const peca = document.getElementById("peca").value.trim();
+
+      const mensagem =
+        "Olá, Mix Autopeças! Gostaria de solicitar um orçamento.\n\n" +
+        "Nome: " + nome + "\n" +
+        "Veículo: " + veiculo + "\n" +
+        "Ano: " + ano + "\n" +
+        "Peça desejada: " + peca;
+
+      const url =
+        "https://wa.me/5511947870632?text=" +
+        encodeURIComponent(mensagem);
+
+      window.location.href = url;
     });
   </script>
+
 </body>
 </html>
