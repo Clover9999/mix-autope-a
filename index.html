@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Mix Autopeças | Riacho Grande</title>
-  <meta name="description" content="Mix Autopeças no Riacho Grande. Solicite orçamentos de peças automotivas diretamente pelo WhatsApp.">
+  <title>Mix Autopeças | Riacho Grande - SBC</title>
+
+  <meta name="description"
+    content="Mix Autopeças no Riacho Grande, São Bernardo do Campo. Solicite orçamentos de peças automotivas pelo WhatsApp.">
 
   <style>
     :root {
@@ -17,9 +19,13 @@
       --texto: #182335;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       margin: 0;
@@ -31,21 +37,22 @@
     header {
       background: var(--azul);
       color: white;
-      padding: 18px 7%;
+      padding: 20px 7%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      gap: 16px;
+      gap: 15px;
     }
 
     .logo {
-      font-size: 26px;
+      font-size: 27px;
       font-weight: 900;
-      letter-spacing: -1px;
     }
 
-    .logo span { color: var(--amarelo); }
+    .logo span {
+      color: var(--amarelo);
+    }
 
     nav {
       display: flex;
@@ -59,20 +66,30 @@
       font-weight: bold;
     }
 
-    nav a:hover { color: var(--amarelo); }
+    nav a:hover {
+      color: var(--amarelo);
+    }
 
     .hero {
-      min-height: 480px;
+      min-height: 500px;
       background:
-        linear-gradient(90deg, rgba(4,25,56,.95), rgba(4,25,56,.45)),
-        url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=1600') center/cover;
+        linear-gradient(
+          90deg,
+          rgba(4,25,56,.95),
+          rgba(4,25,56,.45)
+        ),
+        url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=1600')
+        center/cover;
+
       color: white;
       display: flex;
       align-items: center;
       padding: 70px 8%;
     }
 
-    .hero-content { max-width: 650px; }
+    .hero-content {
+      max-width: 650px;
+    }
 
     .hero h1 {
       font-size: clamp(38px, 6vw, 65px);
@@ -80,7 +97,9 @@
       margin: 15px 0;
     }
 
-    .hero h1 span { color: var(--amarelo); }
+    .hero h1 span {
+      color: var(--amarelo);
+    }
 
     .hero p {
       font-size: 19px;
@@ -113,7 +132,9 @@
       background: #ffe16b;
     }
 
-    section { padding: 75px 8%; }
+    section {
+      padding: 75px 8%;
+    }
 
     .section-title {
       text-align: center;
@@ -130,7 +151,8 @@
 
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
       gap: 22px;
     }
 
@@ -142,7 +164,9 @@
       transition: .2s;
     }
 
-    .card:hover { transform: translateY(-5px); }
+    .card:hover {
+      transform: translateY(-5px);
+    }
 
     .card img {
       width: 100%;
@@ -151,7 +175,9 @@
       display: block;
     }
 
-    .card-content { padding: 22px; }
+    .card-content {
+      padding: 22px;
+    }
 
     .card h3 {
       margin: 0 0 10px;
@@ -169,7 +195,9 @@
       text-align: center;
     }
 
-    .about h2 { color: var(--amarelo); }
+    .about h2 {
+      color: var(--amarelo);
+    }
 
     .about p {
       max-width: 750px;
@@ -217,6 +245,27 @@
       background: #e8eff9;
     }
 
+    .localizacao {
+      background: white;
+      text-align: center;
+    }
+
+    .mapa-container {
+      max-width: 1050px;
+      margin: 30px auto;
+      overflow: hidden;
+      border-radius: 16px;
+      border: 4px solid var(--amarelo);
+      box-shadow: 0 8px 25px rgba(0,0,0,.12);
+    }
+
+    .mapa-container iframe {
+      display: block;
+      width: 100%;
+      height: 350px;
+      border: 0;
+    }
+
     footer {
       background: #041a38;
       color: white;
@@ -239,52 +288,90 @@
     }
 
     @media (max-width: 600px) {
-      header { justify-content: center; }
-      nav { justify-content: center; }
-      .hero { padding: 60px 7%; }
-      section { padding: 55px 6%; }
-      .form-container { padding: 22px; }
+      header {
+        justify-content: center;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      .hero {
+        padding: 60px 7%;
+      }
+
+      section {
+        padding: 55px 6%;
+      }
+
+      .form-container {
+        padding: 22px;
+      }
+
+      .floating-whatsapp {
+        right: 12px;
+        bottom: 12px;
+      }
     }
   </style>
 </head>
 
 <body>
 
+  <!-- CABEÇALHO -->
   <header>
-    <div class="logo">MIX <span>AUTOPEÇAS</span></div>
+    <div class="logo">
+      MIX <span>AUTOPEÇAS</span>
+    </div>
 
     <nav>
       <a href="#inicio">Início</a>
       <a href="#produtos">Produtos</a>
       <a href="#sobre">Sobre</a>
       <a href="#orcamento">Orçamento</a>
+      <a href="#localizacao">Localização</a>
       <a href="#contato">Contato</a>
     </nav>
   </header>
 
   <main>
+
+    <!-- PÁGINA INICIAL -->
     <div class="hero" id="inicio">
       <div class="hero-content">
-        <div class="tag">Riacho Grande • São Bernardo do Campo</div>
 
-        <h1>A PEÇA CERTA PARA <span>SEU CARRO!</span></h1>
+        <div class="tag">
+          Riacho Grande • São Bernardo do Campo
+        </div>
+
+        <h1>
+          A PEÇA CERTA PARA
+          <span>SEU CARRO!</span>
+        </h1>
 
         <p>
           Encontre peças e acessórios automotivos.
-          Consulte nossa equipe e solicite seu orçamento
-          diretamente pelo WhatsApp.
+          Consulte nossa equipe e solicite seu
+          orçamento diretamente pelo WhatsApp.
         </p>
 
         <a class="btn" href="#orcamento">
           SOLICITAR ORÇAMENTO
         </a>
+
       </div>
     </div>
 
+    <!-- PRODUTOS -->
     <section id="produtos">
-      <h2 class="section-title">NOSSAS LINHAS DE PRODUTOS</h2>
+
+      <h2 class="section-title">
+        NOSSAS LINHAS DE PRODUTOS
+      </h2>
+
       <p class="section-subtitle">
-        Consulte a disponibilidade das peças com nossa equipe.
+        Consulte a disponibilidade das peças
+        com nossa equipe.
       </p>
 
       <div class="cards">
@@ -292,81 +379,104 @@
         <div class="card">
           <img
             src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=700"
-            alt="Peças e manutenção automotiva"
-            loading="lazy"
-          >
+            alt="Peças para motor"
+            loading="lazy">
+
           <div class="card-content">
             <h3>Peças para motor</h3>
-            <p>Consulte componentes e peças para o motor do seu veículo.</p>
+            <p>
+              Consulte componentes e peças
+              para o motor do seu veículo.
+            </p>
           </div>
         </div>
 
         <div class="card">
           <img
             src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=700"
-            alt="Automóvel esportivo"
-            loading="lazy"
-          >
+            alt="Freios e suspensão"
+            loading="lazy">
+
           <div class="card-content">
             <h3>Freios e suspensão</h3>
-            <p>Consulte peças para os sistemas de freio e suspensão.</p>
+            <p>
+              Consulte peças para os sistemas
+              de freio e suspensão.
+            </p>
           </div>
         </div>
 
         <div class="card">
           <img
             src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=700"
-            alt="Automóvel"
-            loading="lazy"
-          >
+            alt="Filtros e lubrificantes"
+            loading="lazy">
+
           <div class="card-content">
             <h3>Filtros e lubrificantes</h3>
-            <p>Consulte óleos, filtros e produtos de manutenção.</p>
+            <p>
+              Consulte óleos, filtros e produtos
+              de manutenção.
+            </p>
           </div>
         </div>
 
         <div class="card">
           <img
             src="https://images.unsplash.com/photo-1517524206127-48bbd363f3d7?w=700"
-            alt="Oficina automotiva"
-            loading="lazy"
-          >
+            alt="Acessórios automotivos"
+            loading="lazy">
+
           <div class="card-content">
             <h3>Acessórios automotivos</h3>
-            <p>Entre em contato para consultar acessórios disponíveis.</p>
+            <p>
+              Entre em contato para consultar
+              acessórios disponíveis.
+            </p>
           </div>
         </div>
 
       </div>
     </section>
 
+    <!-- SOBRE -->
     <section class="about" id="sobre">
+
       <h2>SUA AUTOPEÇAS NO RIACHO GRANDE</h2>
 
       <p>
-        Na Mix Autopeças, você pode consultar peças
-        e acessórios para seu veículo de forma prática.
-        Envie os dados do carro e a peça desejada
-        para solicitar seu orçamento.
+        Na Mix Autopeças, você pode consultar
+        peças e acessórios para seu veículo
+        de forma prática.
+
+        Envie os dados do carro e a peça
+        desejada para solicitar seu orçamento.
       </p>
 
       <a
         class="btn"
         href="https://wa.me/5511947870632?text=Ol%C3%A1%2C%20Mix%20Autope%C3%A7as!"
         target="_blank"
-        rel="noopener noreferrer"
-      >
+        rel="noopener noreferrer">
         FALAR COM A LOJA
       </a>
+
     </section>
 
+    <!-- FORMULÁRIO -->
     <section id="orcamento">
-      <h2 class="section-title">SOLICITE SEU ORÇAMENTO</h2>
+
+      <h2 class="section-title">
+        SOLICITE SEU ORÇAMENTO
+      </h2>
+
       <p class="section-subtitle">
-        Preencha os dados e envie sua solicitação pelo WhatsApp.
+        Preencha os dados e envie sua
+        solicitação pelo WhatsApp.
       </p>
 
       <div class="form-container">
+
         <form id="formOrcamento">
 
           <label for="nome">Seu nome</label>
@@ -374,32 +484,28 @@
             type="text"
             id="nome"
             placeholder="Digite seu nome"
-            required
-          >
+            required>
 
           <label for="veiculo">Modelo do veículo</label>
           <input
             type="text"
             id="veiculo"
             placeholder="Ex.: Gol 1.6"
-            required
-          >
+            required>
 
           <label for="ano">Ano do veículo</label>
           <input
             type="text"
             id="ano"
             placeholder="Ex.: 2015"
-            required
-          >
+            required>
 
           <label for="peca">Peça desejada</label>
           <textarea
             id="peca"
             rows="4"
             placeholder="Ex.: Pastilha de freio dianteira"
-            required
-          ></textarea>
+            required></textarea>
 
           <button type="submit" class="btn">
             ENVIAR ORÇAMENTO PELO WHATSAPP
@@ -409,51 +515,117 @@
       </div>
     </section>
 
-    <section class="contact" id="contato">
-      <h2 class="section-title">ENTRE EM CONTATO</h2>
+    <!-- GOOGLE MAPS -->
+    <section class="localizacao" id="localizacao">
 
-      <p>Riacho Grande — São Bernardo do Campo, SP</p>
-      <p><strong>WhatsApp: (11) 94787-0632</strong></p>
+      <h2 class="section-title">
+        📍 ONDE ESTAMOS
+      </h2>
+
+      <p class="section-subtitle">
+        Venha conhecer a Mix Autopeças
+        no Riacho Grande, São Bernardo do Campo - SP.
+      </p>
+
+      <div class="mapa-container">
+
+        <iframe
+          title="Localização da Mix Autopeças"
+          src="https://www.google.com/maps?q=Mix%20Autope%C3%A7as%20Riacho%20Grande%20S%C3%A3o%20Bernardo%20do%20Campo&output=embed"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+
+      </div>
+
+      <a
+        class="btn"
+        href="https://www.google.com/maps/search/?api=1&query=Mix%20Autope%C3%A7as%20Riacho%20Grande%20S%C3%A3o%20Bernardo%20do%20Campo"
+        target="_blank"
+        rel="noopener noreferrer">
+        📍 COMO CHEGAR PELO GOOGLE MAPS
+      </a>
+
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contact" id="contato">
+
+      <h2 class="section-title">
+        ENTRE EM CONTATO
+      </h2>
+
+      <p>
+        Riacho Grande — São Bernardo do Campo, SP
+      </p>
+
+      <p>
+        <strong>
+          WhatsApp: (11) 94787-0632
+        </strong>
+      </p>
 
       <a
         class="btn"
         href="https://wa.me/5511947870632"
         target="_blank"
-        rel="noopener noreferrer"
-      >
+        rel="noopener noreferrer">
         ABRIR WHATSAPP
       </a>
+
     </section>
+
   </main>
 
+  <!-- RODAPÉ -->
   <footer>
+
     <strong>MIX AUTOPEÇAS</strong>
-    <p>Riacho Grande — São Bernardo do Campo</p>
-    <small>Site demonstrativo. Informações sujeitas à confirmação.</small>
+
+    <p>
+      Riacho Grande — São Bernardo do Campo
+    </p>
+
+    <small>
+      Site demonstrativo.
+      Informações sujeitas à confirmação.
+    </small>
+
   </footer>
 
+  <!-- WHATSAPP FLUTUANTE -->
   <a
     class="floating-whatsapp"
     href="https://wa.me/5511947870632"
     target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Falar com a Mix Autopeças pelo WhatsApp"
-  >
+    rel="noopener noreferrer">
     WhatsApp
   </a>
 
+  <!-- JAVASCRIPT DO ORÇAMENTO -->
   <script>
+
     const form = document.getElementById("formOrcamento");
 
     form.addEventListener("submit", function(event) {
+
       event.preventDefault();
 
-      if (!form.reportValidity()) return;
+      if (!form.reportValidity()) {
+        return;
+      }
 
-      const nome = document.getElementById("nome").value.trim();
-      const veiculo = document.getElementById("veiculo").value.trim();
-      const ano = document.getElementById("ano").value.trim();
-      const peca = document.getElementById("peca").value.trim();
+      const nome =
+        document.getElementById("nome").value.trim();
+
+      const veiculo =
+        document.getElementById("veiculo").value.trim();
+
+      const ano =
+        document.getElementById("ano").value.trim();
+
+      const peca =
+        document.getElementById("peca").value.trim();
 
       const mensagem =
         "Olá, Mix Autopeças! Gostaria de solicitar um orçamento.\n\n" +
@@ -467,7 +639,9 @@
         encodeURIComponent(mensagem);
 
       window.location.href = url;
+
     });
+
   </script>
 
 </body>
